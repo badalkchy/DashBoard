@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/corporative-alt?styles=53252" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/corporative-alt?styles=53252');
+</style>
+
+</head>
+<body>
+    <div class="con">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">
+                    <span class="title"><img src="Group 31.png" alt=""><span class="txt">v.01</span></span></a>
+                </li>
+
+                <li><a href="#"><span class="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                    <span class="title">Dashboard</span></a>
+                </li>
+                <li><a href="#"><span class="icon"><ion-icon name="cube-outline"></ion-icon></span>
+                    <span class="title">Fee Management</span></a>
+                </li>
+                <li><a href="#"><span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="title">Students</span></a>
+                </li>
+                <li><a href="#"><span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
+                    <span class="title">Disbursal</span></a>
+                </li>
+                <li><a href="#"><span class="icon"><ion-icon name="ribbon-outline"></ion-icon></span>
+                    <span class="title">Promote</span></a>
+                </li>
+                <li><a href="#"><span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                    <span class="title">Help</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section id="sec1">
+        <div class="topbar">
+            <!-- Toggle -->
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <!-- search -->
+            <div class="search">
+                <label for="">
+                    <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                    <input type="text" placeholder="Search here">
+                </label>
+            </div>
+            <!-- userimg -->
+            <div class="user">
+                <img src="icons8-male-user-100.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.sec1');
+
+    toggle.onclick = function(){
+         navigation.classList.toggle('active');
+    }
+
+</script>
+</body>
+</html>
