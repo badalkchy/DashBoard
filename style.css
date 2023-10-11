@@ -39,7 +39,9 @@ body{
     border-radius:10px;
     list-style:none;
     width:90%;
+    width:max-content;
     margin-left:10px;
+    margin-right:10px;
     margin-bottom:10px;
 }
 .navigation ul li:hover{
@@ -79,8 +81,10 @@ body{
     color:white;
 }
 .navigation ul li a .icon{
-    border:1px solid rgb(255, 255, 255);
+    border:1px solid rgb(187, 90, 90);
     position:relative;
+    width:max-content;
+
     display:block;
     min-width:20px;
     height:20px;
@@ -90,6 +94,10 @@ body{
     font-weight: bold;
     border-radius:5px;
     margin:auto;
+}
+.navigation ul li a .out{
+    /* border:2px solid blue; */
+    margin:8px 6px;
 }
 /* .navigation ul li a .icon:hover{
     color:white;
@@ -107,31 +115,46 @@ body{
     width:180px;
     border-radius:10px;
 }
-#sec1{
+.sec1{
     border:2px solid black;
     width:100%;
     background-color: #f4fafc;
     height:100%;
 
 }
-#sec1{
+.sec1{
     position:absolute;
     border:4px solid orange;
     width:calc(100% -250px);
     left:250px;
-    min-height:100vh;
+    height:40px;
     background-color: antiquewhite;
     transition:0.5s;
+    display: flex;
 }
-#sec1 .topbar{
+.sec1.active{
+    width:calc(100% -55px);
+    left:55px;
+}
+.sec1 .topbar{
     border:2px solid red;
-    width:82%;
+    width:5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0 10px;
 }
-#sec1 .toggle{
+.sec1 .top{
+    border:2px solid red;
+    width:77%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 10px;
+    position:fixed;
+    left:320px
+}
+.sec1 .toggle{
     position:relative;
     top:0px;
     border:2px solid rgb(119, 115, 115);
@@ -143,30 +166,30 @@ body{
     font-size:1.5em;
     font-weight:bold;
 }
-#sec1 .search{
+.sec1 .search{
     border:2px solid red;
     background-color: white;
     border-radius:10px;
     width:200px;
     height:23px;
 }
-#sec1 .search input[type=text]{
+.sec1 .search input[type=text]{
     border:none;
     outline:none;
     padding:0px 0px;
     color:grey;
 }
-#sec1 .search .icon{
+.sec1 .search .icon{
     color:grey;
     /* border:1px solid red; */
     font-size: 13px;
     margin-left: 5px;
 }
-#sec1 .user img{
+.sec1 .user img{
     width:100%;
     height:100%;
 }
-#sec1 .user{
+.sec1 .user{
     border:2px solid black;
     height:30px;
     width: 30px;
@@ -177,3 +200,57 @@ body{
         color:black;
     }
 } */
+.sec2{
+    border:2px solid green;
+    min-width:82%;
+    position:fixed;
+    top:40px;
+    left:250px;
+    height:100%;
+}
+.sec2 .inner{
+    width:90%;
+    border:2px solid blue;
+    height:100vh;
+    margin:0px auto;
+}
+.sec2 .con1{
+    border:2px solid red;
+    min-width:100%;
+    height:60px;
+    font-weight:bold;
+    padding:15px 0px;
+}
+.sec2 .con1 .f{
+    border:3px solid black;
+}
+.sec2 .con2{
+    border:3px solid orange;
+    height:150px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+.sec2 .con2 .box1,
+.sec2 .con2 .box2,
+.sec2 .con2 .box3{
+    width:250px;
+    border:2px solid blue;
+    height:70%;
+    display: flex;
+}
+.sec2 .con2 .f1{
+    border:2px solid green;
+    width:40%;
+    height:100%;
+}
+.sec2 .con2 .f2{
+    border:2px solid orange;
+    width:60%;
+}
+.sec2 .con2 .f1 .one{
+    border:2px solid green;
+    width:80%;
+    height:80%;
+}
