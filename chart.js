@@ -21,7 +21,8 @@ var myChart = new Chart(ctx, {
                 grid:{display:false}
             },y:{
                 beginAtZero:true,
-                grid:{display:false}
+                grid:{display:false},
+                ticks:{display:false}
 
             },
         },
