@@ -8,7 +8,32 @@
     <link href="https://fonts.cdnfonts.com/css/corporative-alt?styles=53252" rel="stylesheet">
     <style>
         @import url('https://fonts.cdnfonts.com/css/corporative-alt?styles=53252');
-</style>
+    </style>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+  
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Online',     63],
+            ['Cash',      25],
+            ['Cheque',  12]
+          ]);
+  
+          var options = {
+            title: 'Payment Mode'
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  
+          chart.draw(data, options);
+        }
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js" integrity="sha512-BqNYFBAzGfZDnIWSAEGZSD/QFKeVxms2dIBPfw11gZubWwKUjEgmFUtUls8vZ6xTRZN/jaXGHD/ZaxD9+fDo0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 <body>
@@ -67,27 +92,65 @@
             <div class="con1"><span class="f">DAV Public School, Bhilai</span></div>
             <div class="con2">
                 <div class="box1">
-                    <div class="f1"><div class="one"></div></div>
-                    <div class="f2"></div>
+                    <div class="f1" id="o1"><div class="one"><img src="first_section/1.png" alt=""></div></div>
+                    <div class="f2">
+                        <div class="s1">Collection till date</div>
+                        <div class="s2">$5.34Cr</div>
+                        <div class="s3">
+                            <span class="first"><ion-icon name="arrow-up-outline"></ion-icon> 10%</span>
+                            <span class="second">in last 30 days</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="box2">
-                    <div class="f1"><div class="one"></div></div>
-                    <div class="f2"></div>
+                    <div class="f1" id="o2"><div class="one"><img src="first_section/imageedit_2_2237989396.png" alt=""></div></div>
+                    <div class="f2">
+                        <div class="s1">Balance</div>
+                        <div class="s2">$2.4L</div>
+                        <div class="s3"></div>
+                    </div>
                 </div>
                 <div class="box3">
-                    <div class="f1"><div class="one"></div></div>
-                    <div class="f2"></div>
+                    <div class="f1" id="o3"><div class="one"><img src="first_section/Icon.png" alt=""></div></div>
+                    <div class="f2">
+                        <div class="s1">Defaulters</div>
+                        <div class="s2">
+                            <span class="first">11</span>
+                            <span class="sec">/1,045 Students</span></div>
+                        <div class="s3">
+                            <span class="first"><ion-icon name="arrow-down-outline"></ion-icon> 11%</span>
+                            <span class="second">in last 30 days</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="con3">
-                <div class="sore1"></div>
-                <div class="sore2"></div>
-                <div class="sore3"></div>
-                <div class="sore4"></div>
+                <div class="sore">
+                    <span class="s1">Students</span>
+                    <span class="s2">1,049</span>
+                </div>
+                <div class="sore">
+                    <span class="s1">Sections</span>
+                    <span class="s2"><span class="sm1">18</span> <span class="sm2">in 12 classes</span></span>
+                </div>
+                <div class="sore">
+                    <span class="s1">Collection</span>
+                    <span class="s2">$90.56L</span>
+                </div>
+                <div class="sore">
+                    <span class="s1">Fine Collected till date</span>
+                    <span class="s2">$11.20L</span>
+                </div>
             </div>
             <div class="con4">
-                <div class="graph1"></div>
-                <div class="graph2"></div>
+                <div class="graph1">
+                    <canvas id="myChart" width="600" height="280"></canvas>
+                    <script src="char.js"></script>
+                </div>
+                <div class="graph2">
+                    <canvas id="myChart1" width="250" height="230"></canvas>
+                    <script src="chart.js"></script>
+                </div>
             </div>
             <div class="con5">
                 <div class="record1"></div>

@@ -9,6 +9,11 @@ body{
     width:100vw;
     height:100vh;
     overflow-x: hidden;
+    background-color:rgb(238, 236, 255);
+
+}
+:root{
+    --cgrey:rgb(132, 132, 132);
 }
 .con{
     border:2px solid blue;
@@ -45,7 +50,7 @@ body{
     margin-bottom:10px;
 }
 .navigation ul li:hover{
-    background:#6034ec;
+    background:#4318FE;
 }
 .navigation ul li:nth-child(1){
     margin-bottom: 30px;
@@ -207,9 +212,10 @@ body{
     top:40px;
     left:250px;
     height:100%;
+    background-color:rgb(238, 236, 255);
 }
 .sec2 .inner{
-    width:90%;
+    width:85%;
     border:2px solid blue;
     height:100vh;
     margin:0px auto;
@@ -225,6 +231,7 @@ body{
     border:3px solid black;
 }
 .sec2 .con2{
+    border-radius:20px;
     border:3px solid orange;
     height:150px;
     display:flex;
@@ -237,20 +244,119 @@ body{
 .sec2 .con2 .box3{
     width:250px;
     border:2px solid blue;
-    height:70%;
+    height:55%;
     display: flex;
 }
 .sec2 .con2 .f1{
     border:2px solid green;
-    width:40%;
+    width:37%;
     height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:46px;
 }
 .sec2 .con2 .f2{
     border:2px solid orange;
-    width:60%;
+    width:80%;
 }
 .sec2 .con2 .f1 .one{
     border:2px solid green;
-    width:80%;
-    height:80%;
+    width:48%;
+    height:48%;
+}
+.sec2 .con2 #o1{
+    background-image: linear-gradient(45deg,rgb(238, 254, 233),rgb(163, 239, 163));
+}
+.sec2 .con2 #o2{
+    background-image: linear-gradient(45deg,rgb(233, 252, 254),rgb(163, 220, 239));
+}
+.sec2 .con2 #o3{
+    background-image: linear-gradient(45deg,rgb(255, 243, 243),rgb(255, 152, 169));
+}
+.sec2 .con2 .box1 .one img{
+    width:100%;
+    height:100%;
+}
+.sec2 .con2 .box2 .f1 img{
+    width:100%;
+    height:100%;
+}
+.sec2 .con2 .box3 .f1 img{
+    width:100%;
+    height:100%;
+}
+.con2 .f2 .s1{
+    border:2px solid red;
+    color:var(--cgrey);
+    font-size:12px;
+}
+.con2 .f2 .s2{
+    border:2px solid green;
+    font-weight:bold;
+    font-size:20px
+}
+.con2 .box3 .f2 .s2 .sec{
+    font-size:12px;
+    font-weight:normal;
+    color: black;
+}
+.con2 .f2 .s3{
+    border:2px solid blue;
+}
+.con2 .f2 .s3 .first{
+    border:2px solid green;
+    color:rgb(0, 117, 0);
+    font-weight:bold;
+    font-size:10px;
+}
+.con2 .f2 .s3 .second{
+    font-size:11px;
+}
+.sec2 .inner .con3{
+    border:2px solid red;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.sec2 .inner .con3 .sore{
+    border:2px solid orange;
+    width:212px;
+    height:85px;
+    border-radius:10px;
+    padding:16px 20px;
+}
+.sec2 .inner .con3 .sore .s1{
+    border:2px solid red;
+    display: block;
+    color:var(--cgrey);
+    font-size:12px;
+    padding-bottom:5px;
+}
+.sec2 .inner .con3 .sore .s2{
+    border:2px solid green;
+    font-size:21px;
+    font-weight:bold;
+}
+.sec2 .inner .con3 .sore .s2 .sm2{
+    font-size: 10px;
+    font-weight:normal;
+}
+.sec2 .inner .con4{
+    border:2px solid black;
+    height:280px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.sec2 .inner .con4 .graph1{
+    border:9px solid rgb(230, 227, 249);
+    height:100%;
+    width:65%;
+}
+.sec2 .inner .con4 .graph2{
+    border:2px solid green;
+    height:100%;
+    width:30%;
 }
