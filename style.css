@@ -48,6 +48,7 @@ body{
     margin-left:10px;
     margin-right:10px;
     margin-bottom:10px;
+    background-color: rgb(238, 237, 255);;
 }
 .navigation ul li:hover{
     background:#6432e4;
@@ -55,6 +56,8 @@ body{
 .navigation ul li:nth-child(1){
     margin-bottom: 30px;
     pointer-events:none;
+    padding-left:5px;
+    background-color: white;
 }
 .navigation ul li:nth-child(1) a{
     height:60px;
@@ -175,11 +178,11 @@ body{
     font-weight:bold;
 }
 .sec1 .search{
-    border:2px solid red;
+    border:2px solid rgba(255, 0, 0, 0);
     background-color: white;
     border-radius:10px;
     width:200px;
-    background-color:rgb(244, 243, 255);
+    background-color:rgb(234, 232, 255);
     height:23px;
 }
 .sec1 .search input[type=text]{
@@ -187,7 +190,7 @@ body{
     outline:none;
     padding:0px 0px;
     color:grey;
-    background-color:rgb(244, 243, 255);
+    background-color:rgb(234, 232, 255);
 }
 .sec1 .search input::placeholder{
     color:rgb(120, 111, 223);
